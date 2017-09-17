@@ -1,0 +1,7 @@
+<div *ngIf="player" class="col-12">
+    <div class="left"><img class="md-card-image example-header-image" onerror="this.src='./assets/images/none.png'"
+            [src]="player.imageUrl" alt="user avatar"></div>
+    <div class="padding20 left">
+        {{player.name}}
+    </div>
+</div>

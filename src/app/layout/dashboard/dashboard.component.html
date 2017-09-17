@@ -1,0 +1,44 @@
+<div [@routerTransition]>
+    <h2>Equipos inscritos</h2>
+
+    <div class="row">
+        <div class="card-deck">
+            <div *ngFor="let item of teams">
+                <app-stat [team]="item"> </app-stat>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <!--<ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
+    <hr />
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card card-default">
+                <div class="card-header">
+                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                </div>
+
+                <app-timeline></app-timeline>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card card-default">
+                <div class="card-header">
+                    <i class="fa fa-bell fa-fw"></i> Notifications card
+                </div>
+
+                <app-notification></app-notification>
+
+            </div>
+
+
+            <app-chat></app-chat>
+
+        </div>
+
+    </div>-->
+</div>

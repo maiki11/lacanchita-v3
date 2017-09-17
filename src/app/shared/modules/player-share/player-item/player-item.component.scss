@@ -1,0 +1,28 @@
+.cardPlayer {
+  width: 350px;
+  height: 100px;
+  padding: 10px; 
+}
+
+.cardPlayer img{
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.cardPlayer h2{
+  padding-top: 5px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ .left{
+  float: left;
+ }
+ 
+ .padding20{
+  padding: 20px;
+ }

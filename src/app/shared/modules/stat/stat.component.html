@@ -1,0 +1,27 @@
+<div *ngIf="team" class="card card-style">
+    <img class="card-img-top" class="md-card-image example-header-image" onerror="this.src='./assets/images/none.png'"
+        [src]="team.imageUrl" alt="Card image cap">
+    <div class="card-block">
+        <h4 class="card-title">{{team.title}}</h4>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Liga</th>
+                <th>Activo</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of team.leagues">
+                <tr >
+                <td>{{item.name}}</td>
+                <td>
+                    <label class="float-right switch">
+                        <input (click)="pickLeague(item.id,$event)" [(ngModel)]="item.active" type="checkbox">
+                        <div class="slider"></div>
+                    </label>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
